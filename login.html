@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <style>
+        /* You can add your CSS styles here */
+        .container {
+            text-align: center;
+        }
+        body {
+            background-image: url('images/north_background_login_desktop.png'); /* Add the path to your background image */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            height: 100vh; /* Set the body height to fill the viewport */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-form {
+            width: 320px;
+            background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent background color */
+            padding: 50px;
+        }
+        .login-form .forgot_password{
+            display: flex;
+            float: right;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 295px;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        button {
+            display: flex;
+            padding: 10px 60px;
+            background-color: #f7444e;
+            border: 1px solid #f7444e;
+            color: #ffffff;
+            border-radius: 35px;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            margin-left: 70px;
+            
+        }
+
+        button:hover{
+            background-color: transparent;
+            color: #f7444e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <img src="images/Logo-ngang-01.png" alt="" width="250px">
+            <form action="login.php" method="post" >
+                <input type="text" name="phone" placeholder="Nhập số điện thoại của bạn" required>
+                <input type="password" name="password" placeholder="Nhập mật khẩu của bạn" required>
+                <div class="forgot_password">
+                    <a href="fotgot.html">Quên mật khẩu?</a>
+                </div>
+                <button type="submit">Đăng Nhập</button>
+            </form>
+            <p>Bạn chưa có tài khoản? <a href="register.html">Đăng ký</a></p>
+            <p><a href="index.html">Quay lại màn hình chính</a></p>
+        </div>
+    </div>
+</body>
+</html>
